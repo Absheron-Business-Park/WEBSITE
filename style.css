@@ -1200,6 +1200,11 @@ margin-left: 10px;
     padding-right: 40px;
     width: 100%;
 }
+
+.Image-Main {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .Image-Main {
         display: none;
