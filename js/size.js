@@ -2,7 +2,7 @@
       const width = window.innerWidth;
       const height = window.innerHeight;
 
-      if (width >= 1024 && width <= 1670 && height >= 740 && height <= 1000) {
+      if (width >= 750 && width <= 1670 && height >= 740 && height <= 1000) {
         document.body.style.zoom = "0.8";
       } else {
         document.body.style.zoom = "1";
