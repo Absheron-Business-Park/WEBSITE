@@ -364,7 +364,7 @@ body {
         top: 100px;
         left: 0;
         width: 100%;
-        height: calc(100dvh - 100px);
+        height: calc(100dvh - 0px);
         background: var(--white-color);
         display: flex;
         flex-direction: column;
@@ -1339,7 +1339,8 @@ padding-bottom: 5rem; */
     background-size: cover;         
     background-position: center;     
     background-repeat: no-repeat;    
-    background-attachment: scroll;    
+    background-attachment: scroll;  
+    padding-left: 1rem;  
 }
 
   .Banner-Group .Header-Description {
