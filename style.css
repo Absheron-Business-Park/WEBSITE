@@ -1309,3 +1309,29 @@ padding-bottom: 5rem; */
         font-size: 14px;
     }
 }
+
+.Banner-Text {
+    position: relative;
+        /* position: absolute; */
+    top: 50%;
+    left: 5vw;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: -0.5rem;
+
+}
+
+.Banner-Group{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    height: 50dvh;
+}
