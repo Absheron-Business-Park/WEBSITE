@@ -1,13 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.querySelector('.Section-Slider');
-    const leftBtn = document.querySelector('.Section-Elements-Navigation:first-child');
-    const rightBtn = document.querySelector('.Section-Elements-Navigation:last-child');
-    const allItems = Array.from(document.querySelectorAll('.Section-Elements'));
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector(".Section-Slider");
+    const allElements = Array.from(slider.children);
     
-    let currentIndex = 0;
-    const totalItems = allItems.length;
-    let visibleCount = 6; // Show 6 items at a time
+    // Filter only the slider items (exclude navigation)
+    const itemContainers = allElements.filter(el => el.classList.contains("Section-Elements"));
     
+    const btnPrev = slider.querySelector(".Section-Elements-Navigation img[src*='left']");
+    const btnNext = slider.querySelector(".Section-Elements-Navigation img[src*='right']");
+    let visibleCount = 1;
+
     function updateVisibleCount() {
         const width = window.innerWidth;
         if (width >= 1440) visibleCount = 6;
@@ -16,47 +17,36 @@ document.addEventListener('DOMContentLoaded', function() {
         else if (width >= 1020) visibleCount = 3;
         else if (width >= 768) visibleCount = 2;
         else visibleCount = 1;
-        
-        updateDisplay();
     }
-    
-    function updateDisplay() {
-        // Hide all items
-        allItems.forEach(item => {
-            item.style.display = 'none';
+
+    function renderSlider() {
+        // Only move the actual slider items, keep navigation buttons in place
+        itemContainers.forEach(item => slider.insertBefore(item, btnNext.parentElement));
+        
+        itemContainers.forEach((item, index) => {
+            item.style.display = index < visibleCount ? "block" : "none";
         });
-        
-        // Show current visible items
-        for (let i = currentIndex; i < currentIndex + visibleCount && i < totalItems; i++) {
-            if (allItems[i]) {
-                allItems[i].style.display = 'flex';
-            }
-        }
     }
-    
-    function slideRight() {
-        // Move to next item, but don't go beyond total items - visible count
-        if (currentIndex + visibleCount < totalItems) {
-            currentIndex++;
-            updateDisplay();
-        }
+
+    function next() {
+        const first = itemContainers.shift();
+        itemContainers.push(first);
+        renderSlider();
     }
-    
-    function slideLeft() {
-        // Move to previous item, but not below 0
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateDisplay();
-        }
+
+    function prev() {
+        const last = itemContainers.pop();
+        itemContainers.unshift(last);
+        renderSlider();
     }
-    
-    // Event listeners
-    rightBtn.addEventListener('click', slideRight);
-    leftBtn.addEventListener('click', slideLeft);
-    
-    // Initial setup
+
+    btnNext.addEventListener("click", next);
+    btnPrev.addEventListener("click", prev);
+    window.addEventListener("resize", () => {
+        updateVisibleCount();
+        renderSlider();
+    });
+
     updateVisibleCount();
-    
-    // Update on resize
-    window.addEventListener('resize', updateVisibleCount);
+    renderSlider();
 });
