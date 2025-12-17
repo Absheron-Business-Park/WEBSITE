@@ -365,7 +365,7 @@ body {
         top: 100px;
         left: 0;
         width: 100%;
-        height: calc(100dvh - 0px);
+        height: calc(100dvh - 90px);
         background: var(--white-color);
         display: flex;
         flex-direction: column;
@@ -967,6 +967,28 @@ body {
         height: 250px;
         padding: 15px;
     }
+
+       .Navbar-Items {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100dvh - 60px);
+        background: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+        overflow-y: auto;
+        padding-inline: 20px;
+        transform: translateY(100%);
+        transition: 0.35s ease;
+        z-index: 1;
+        border-top: 1px solid var(--border-color);
+        box-shadow: var(--shadow);
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+    }
 }
 
 @media (max-width: 576px) {
@@ -1000,13 +1022,26 @@ body {
 
 
 
+@media (min-width: 1024px) and (max-width: 1200px) {
+.Item {
+    padding-inline: 10px !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backface-visibility: hidden;
+}
+}
+
+
 @media (min-width: 1100px) and (max-width: 1180px) {
     .Header-Socials {
         display: none;
     }
 }
 
-@media (min-width: 1160px) and (max-width: 1323px) {
+@media (min-width: 1024px) and (max-width: 1323px) {
     .Navbar-Group {
         background-color: var(--white-color);
         height: 90px;
@@ -1023,6 +1058,10 @@ body {
         border-bottom: 1px solid var(--border-color);
         z-index: 9;
     }
+
+    .Space-Area {
+    margin-left: 20px;
+}
 }
 
 @media (max-width: 768px) {
@@ -1418,7 +1457,7 @@ padding-bottom: 5rem; */
 .Banner-Group {
     display: flex;
     align-items: center;
-
+margin-top: 40px;
     width: 100%;
 
     height: fit-content;
@@ -1528,13 +1567,13 @@ padding-bottom: 5rem; */
 /* Responsive adjustments */
 @media (max-width: 1280px) {
     .News-Group-Section {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
     .News-Group-Section {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1542,6 +1581,19 @@ padding-bottom: 5rem; */
     .News-Group-Section {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .faq-question {
+    padding: 20px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cyan-color);
+    display: flex;
+    gap: 0px !important;
+}
 }
 
 @media (max-width: 650px) {
@@ -1601,17 +1653,17 @@ padding-bottom: 5rem; */
     gap: 30px;
     justify-content: space-around;
     width: 100%;
-    padding-inline: 40px;
+    padding-inline: 20px;
 }
 
 .Third-Banner-Text {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
     justify-content: center;
     width: 100%;
-    padding-inline: 40px;
+    padding-inline: 20px;
 }
 
 
