@@ -673,6 +673,22 @@ body {
     filter: drop-shadow(var(--shadow));
 }
 
+.Secondary-Button:hover {
+    background-color: var(--white-color);
+    scale: 1.1;
+    transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.Secondary-Button:hover p{
+    color: var(--cyan-color);
+    text-decoration: none;
+}
+
+.Secondary-Button:hover img{
+    filter: var(--filter-cyan);
+}
+
 .Secondary-Button {
     display: flex;
     align-items: center;
@@ -680,6 +696,8 @@ body {
     border: 2px solid var(--white-color);
     border-radius: 100px;
     padding: 1rem 2.5rem;
+        transition: all 0.3s ease;
+            text-decoration: none;
     margin-top: -1rem;
 }
 
@@ -687,6 +705,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: var(--white-color);
+        text-decoration: none !important;
     filter: drop-shadow(var(--shadow));
 }
 
@@ -697,6 +716,23 @@ body {
     width: 100px;
     height: 100%;
     /* background-color: red; */
+}
+
+.Text-Title {
+    position: relative;
+    width: 100%;
+}
+
+.Text-Title a{
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+    padding-inline: var(--layout-grid);
+    color: var(--cyan-color);
 }
 
 .Section-Group .Text-Title {
@@ -1523,6 +1559,8 @@ margin-top: 40px;
     width: 100%;
     gap: 50px;
     height: fit-content;
+    background-color: red;
+    height: 50rem;
     justify-content: center;
 }
 
@@ -1561,10 +1599,11 @@ margin-top: 40px;
     gap: 30px;
     padding: 30px;
     transition: all 0.3s ease;
+    margin-bottom: 2rem;
 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1280px) {
     .News-Group-Section {
         grid-template-columns: repeat(3, 1fr);
@@ -1693,7 +1732,7 @@ margin-top: 40px;
 .faq-container {
     width: 100%;
     max-width: 900px;
-    height: 30rem;
+    /* height: 20rem; */
     padding-inline: 40px;
 }
 .faq-container {
@@ -1742,4 +1781,49 @@ border: 1px solid var(--cyan-color);
     display: none;
     padding-bottom: 25px;
     color: var(--black-color);
+}
+
+
+
+
+.Third-Button:hover {
+    background-color: var(--cyan-color);
+    scale: 1.1;
+    transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.Third-Button:hover p{
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Third-Button:hover img{
+    filter: none;
+}
+
+.Third-Button img{
+    filter: var(--filter-cyan);
+}
+
+.Third-Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cyan-color);
+    border-radius: 100px;
+    padding: 1rem 2.5rem;
+        transition: all 0.3s ease;
+            text-decoration: none;
+    margin-top: -1rem;
+    
+}
+
+.Third-Button p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cyan-color);
+        text-decoration: none !important;
+    filter: drop-shadow(var(--shadow));
 }
