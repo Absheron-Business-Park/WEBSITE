@@ -1,0 +1,23 @@
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+   
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-answer').style.display = 'none';
+            }
+        });
+
+
+        item.classList.toggle('active');
+        const answer = item.querySelector('.faq-answer');
+        if (item.classList.contains('active')) {
+            answer.style.display = 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    });
+});
