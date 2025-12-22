@@ -204,6 +204,7 @@ body {
     width: 60%;
       mix-blend-mode: multiply;
       filter: saturate(1.2);
+      user-select: none;
 }
 
 .Error-Group {
