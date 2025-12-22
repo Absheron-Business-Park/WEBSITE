@@ -1629,6 +1629,41 @@ padding-bottom: 5rem; */
     margin-top: 10px;
 }
 
+.Breadcrumbs-Text-Group img{
+    margin-bottom: 28px;
+    opacity: 0.5;
+    scale: 1.1;
+
+}
+
+.Breadcrumbs-Text-Group a{
+    opacity: 0.5;
+     text-align: left;
+     cursor: pointer;
+    color: var(--black-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Breadcrumbs-Text-Group a:hover {
+    color: var(--cyan-color);
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.Breadcrumbs-Text-Group:hover img{
+filter: var(--filter-cyan);
+    opacity: 0.8;
+}
+
+.Breadcrumbs-Text-Group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: fit; */
+    gap: 10px;
+}
+
 
 @media (max-width: 768px) {
     .Banner-Group .Header-Title {
