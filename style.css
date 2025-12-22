@@ -2384,6 +2384,18 @@ ul li::marker {
     margin-left: 20px;
 }
 
+.Info-ol {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 600;
+}
+
+.Info-ol li{
+    /* margin-left: -30px; */
+}
+
 
 .Section-Bar-Item img {
     padding-inline: 20px;
