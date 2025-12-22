@@ -197,11 +197,13 @@ body {
 
 .Item img {
     transition: transform 0.3s;
+    
 }
 
 .Error {
     width: 60%;
       mix-blend-mode: multiply;
+      filter: saturate(1.5);
 }
 
 .Error-Group {
