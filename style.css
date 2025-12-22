@@ -2055,6 +2055,15 @@ padding-bottom: 5rem; */
     max-width: 400px;
     width: 100%;
     height: fit-content;
+
+}
+
+.Sidepanel-Section:hover .Sidepanel-Section-Item:last-child {
+    border-radius: 0 0 0 var(--secondary-border-radius);
+}
+
+.Sidepanel-Section:hover .Sidepanel-Section-Item:first-child {
+    border-radius: var(--secondary-border-radius) 0 0 0;
 }
 
 .Sidepanel-Section-Item {
@@ -2097,7 +2106,7 @@ padding-bottom: 5rem; */
 
 .Sidepanel-Section-Item:hover {
     scale: 1.05;
-    border-radius: var(--secondary-border-radius);
+    border-radius: var(--secondary-border-radius) !important;
     -webkit-border-radius: var(--secondary-border-radius);
     -moz-border-radius: var(--secondary-border-radius);
     -ms-border-radius: var(--secondary-border-radius);
@@ -2201,11 +2210,11 @@ padding-bottom: 5rem; */
     }
 
     .Info-List-Group {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* height: 100dvh; */
-}
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* height: 100dvh; */
+    }
 
 }
 
@@ -2328,18 +2337,18 @@ padding-bottom: 5rem; */
 
 }
 
-.Info-List-Section ul li{
+.Info-List-Section ul li {
     font-size: 16px;
     font-weight: 600;
-   transform-origin: left center;
-   cursor: default;
-   transition: all 0.3s ease;
+    transform-origin: left center;
+    cursor: default;
+    transition: all 0.3s ease;
 }
 
 
-.Info-List-Section ul li:hover{
-transform: scale(1.5);
- transition: all 0.3s ease;
+.Info-List-Section ul li:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease;
 
 }
 
@@ -2348,9 +2357,10 @@ transform: scale(1.5);
     /* try 0.6em–0.8em */
     color: var(--cyan-color);
 }
-.Info-List-Section ul{
 
-display: flex;
+.Info-List-Section ul {
+
+    display: flex;
     flex-direction: column;
     gap: 30px;
     width: fit-content;
@@ -2520,7 +2530,7 @@ ul li::marker {
     .horizontal-slider {
         gap: 5px;
         display: flex;
-        
+
     }
 
     .horizontal-slider a {
