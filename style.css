@@ -1727,6 +1727,16 @@ filter: var(--filter-cyan);
         display: flex;
         gap: 0px !important;
     }
+
+    .Info-Image-Section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100% !important;
+
+    margin-top: 10px
+}
 }
 
 @media (max-width: 650px) {
@@ -2445,6 +2455,7 @@ filter: var(--filter-cyan);
     margin-bottom: 5px;
     color: var(--cyan-color);
     font-weight: 600;
+    text-align: left;
 }
 
 ul li::marker {
