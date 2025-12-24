@@ -842,7 +842,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 285px;
+    height: 300px;
 }
 
 .Section-Elements {
@@ -882,7 +882,7 @@ body {
 
 .Section-Elements-Item {
     /* padding: 25px 20px 20px 30px; */
-    height: 100%;
+    height: 100% !important;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1366,12 +1366,15 @@ body {
     height: 500px;
     width: 100%;
     margin-top: 45px;
+    background: url(./assets/images/image.png);
+    object-fit: cover;
 }
 
 .Map-Container iframe{
  border-radius: var(--border-radius);
  height: 100%;
 }
+
 
 .Section-Group-Title-Info {
     display: flex;
