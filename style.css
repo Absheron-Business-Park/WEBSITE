@@ -1738,6 +1738,13 @@ padding-bottom: 5rem; */
 
         /* margin-top: 10px */
     }
+
+    .Section-Bar-Item-Solo {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 650px) {
@@ -2242,8 +2249,24 @@ padding-bottom: 5rem; */
 
     }
 
+    .Section-Bar-Item-Solo .Group-Solo:first-child img {
+        padding-bottom: 20px !important;
+    }
+
     .Panel-Section-Group {
         margin-top: 80px;
+    }
+
+    .Preview-Download-Button, .Group-Solo {
+        width: 100%;
+        margin: 10px 0 0 0 !important;
+
+    }
+
+    .Group-Solo {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline !important;
     }
 
 
@@ -2290,6 +2313,11 @@ padding-bottom: 5rem; */
         gap: 20px;
         /* height: 100dvh; */
     }
+
+    .Preview-Download-Button .label {
+    display: flex !important;
+    transition: all 0.3s ease;
+}
 
 }
 
@@ -2343,6 +2371,18 @@ padding-bottom: 5rem; */
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 30px;
     }
+
+    .Section-Bar-Item-Solo {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center;
+    }
+
+    .Group-Solo:first-child img {
+        padding-right: 20px !important;
+    }
+
 
 
 }
@@ -2609,9 +2649,10 @@ ul li::marker {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 20px;
+    padding: 16px;
     gap: 10px;
     border-radius: 100px;
+    white-space: nowrap;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -2628,7 +2669,7 @@ ul li::marker {
 
 
 .Preview-Download-Button:hover {
-    scale: 1.15;
+    scale: 1.2;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
 }
@@ -2637,13 +2678,13 @@ ul li::marker {
 
 
 .Preview-Download-Button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .Preview-Download-Button img {
-    display: inline-block;
+    display: flex;
     transition: all 0.3s ease;
 }
 
@@ -2653,7 +2694,7 @@ transition: all 0.3s ease;
 }
 
 .Preview-Download-Button:hover .label {
-    display: inline-block;
+    display: flex;
     transition: all 0.3s ease;
 }
 
