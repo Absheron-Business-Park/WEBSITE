@@ -2199,6 +2199,11 @@ padding-bottom: 5rem; */
     padding: 0 var(--layout-grid) 0 calc(var(--layout-grid) - 20px);
 }
 
+.Sidepanel-Info-Contact {
+
+    padding: 0 var(--layout-grid) 0 0;
+}
+
 .Sidepanel-Section:hover {
     overflow: visible;
 }
