@@ -1362,6 +1362,17 @@ body {
     margin-top: 0.8rem;
 }
 
+.Map-Container {
+    height: 500px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.Map-Container iframe{
+ border-radius: var(--border-radius);
+ height: 100%;
+}
+
 .Section-Group-Title-Info {
     display: flex;
     align-items: center;
