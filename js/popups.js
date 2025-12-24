@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.Item').forEach(item => {
         item.addEventListener('click', function(e) {
+            // Skip items without a popup
+            if (!this.querySelector('.popup')) {
+                return;
+            }
+
             if (e.target.closest('.Sub-Item') || e.target.closest('.popup')) {
                 return;
             }
