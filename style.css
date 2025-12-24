@@ -145,6 +145,7 @@ body {
 
 .Main-Button {
     display: flex;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
     height: fit-content;
