@@ -198,14 +198,14 @@ body {
 
 .Item img {
     transition: transform 0.3s;
-    
+
 }
 
 .Error {
     width: 60%;
-      mix-blend-mode: multiply;
-      filter: saturate(1.2);
-      user-select: none;
+    mix-blend-mode: multiply;
+    filter: saturate(1.2);
+    user-select: none;
 }
 
 .Error-Group {
@@ -1630,17 +1630,17 @@ padding-bottom: 5rem; */
     margin-top: 10px;
 }
 
-.Breadcrumbs-Text-Group img{
+.Breadcrumbs-Text-Group img {
     margin-bottom: 28px;
     opacity: 0.5;
     scale: 1.1;
 
 }
 
-.Breadcrumbs-Text-Group a{
+.Breadcrumbs-Text-Group a {
     opacity: 0.5;
-     text-align: left;
-     cursor: pointer;
+    text-align: left;
+    cursor: pointer;
     color: var(--black-color);
     font-weight: 600;
     text-decoration: none;
@@ -1652,8 +1652,8 @@ padding-bottom: 5rem; */
     text-decoration: underline;
 }
 
-.Breadcrumbs-Text-Group:hover img{
-filter: var(--filter-cyan);
+.Breadcrumbs-Text-Group:hover img {
+    filter: var(--filter-cyan);
     opacity: 0.8;
 }
 
@@ -1730,14 +1730,14 @@ filter: var(--filter-cyan);
     }
 
     .Info-Image-Section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    height: 100% !important;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: 100% !important;
 
-    /* margin-top: 10px */
-}
+        /* margin-top: 10px */
+    }
 }
 
 @media (max-width: 650px) {
@@ -2337,7 +2337,7 @@ filter: var(--filter-cyan);
         padding-inline: 0px !important;
     }
 
-    
+
     .Info-Bar-Group-Third {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
@@ -2581,6 +2581,23 @@ ul li::marker {
     gap: 30px;
 }
 
+.Info-Bar-Group-Solo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.Section-Bar-Item-Solo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Group-Solo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .Info-Bar-Group-Third {
     display: grid;
@@ -2588,13 +2605,57 @@ ul li::marker {
     gap: 30px;
 }
 
+.Preview-Download-Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    gap: 10px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--cyan-color);
+    transition: all 0.3s ease;
+
+    box-shadow: none;
+}
+
+.Preview-Download-Button img {
+    padding: 0;
+}
+
+
+.Preview-Download-Button:hover {
+    scale: 1.15;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
 
 
 
 
+.Preview-Download-Button {
+    display: inline-flex;
+    align-items: center;
+transition: all 0.3s ease;
+}
 
+.Preview-Download-Button img {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
 
+.Preview-Download-Button .label {
+    display: none;
+    transition: all 0.3s ease;
+}
 
+.Preview-Download-Button:hover .label {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
 
 
 
@@ -2719,25 +2780,28 @@ ul li::marker {
 
 
 
-@media  (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
-.Info-Form {
-    max-width: 1000%;
-    /* margin: 0 auto; */
-}
+    .Info-Form {
+        max-width: 1000%;
+        /* margin: 0 auto; */
+    }
 
+    input.Main-Button {
+        width: fit-content;
+    }
 
-
-}
-
-
-@media  (max-width: 768px) {
-
-.form-row {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr) !important;
 
 }
+
+
+@media (max-width: 768px) {
+
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
 }
 
 input.Main-Button {
@@ -2784,7 +2848,7 @@ input.Main-Button {
 .form-field textarea:focus {
     box-shadow: var(--shadow);
     outline: none;
-    border-color: transparent; 
+    border-color: transparent;
 }
 
 .form-field textarea {
