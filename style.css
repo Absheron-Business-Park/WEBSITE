@@ -1204,7 +1204,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 80px 30px 50px 20px;
+        padding: 80px 20px 50px 20px;
         margin-top: 0px;
         overflow: hidden;
     }
@@ -1342,13 +1342,19 @@ body {
     height: 100%;
 } */
 
+.Section-Group-Title p{
+    white-space: wrap;
+}
+
 .Section-Group-Title p:nth-child(1) {
     font-size: 36px;
     font-weight: bold;
     color: var(--black-color);
     text-transform: uppercase;
 }
-
+.Social-Item-Text-Group p{
+    color: var(--black-color);
+}
 .Section-Group-Title p:nth-child(2) {
     font-size: 16px;
     font-weight: 600;
