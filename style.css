@@ -1749,6 +1749,26 @@ padding-bottom: 5rem; */
     gap: 10px;
 }
 
+.Layout-Grid-View {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 100%;
+}
+
+.Layout-Grid-View img:hover {
+    scale: 1.08;
+    transition: all 0.3s ease;
+}
+.Layout-Grid-View img {
+  width: 100% !important; 
+  height: auto;
+  display: block;
+  transition: all 0.3s ease;
+  object-fit: contain; 
+}
 
 @media (max-width: 768px) {
     .Banner-Group .Header-Title {
@@ -2303,6 +2323,12 @@ padding-bottom: 5rem; */
     font-size: 15px;
 }
 
+.Ghost-Text {
+    font-size: 20px;
+    font-weight: 800;
+    color: gray;
+    opacity: 0.5;
+}
 
 .Info-Text-Group {
     display: flex;
