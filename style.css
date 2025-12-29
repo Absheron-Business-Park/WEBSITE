@@ -3390,7 +3390,7 @@ input.Main-Button {
  
 @media (max-width: 768px) {
     .image-stack {
-        height: 50vh;
+        height: fit-content;
         min-height: 300px;
     }
     
@@ -3404,13 +3404,20 @@ input.Main-Button {
         width: 40px;
         height: 40px;
     }
+ .popup-expand {
+        width: 40px;
+        height: 40px;
+        rotate: 90deg;
+    }
+
+    .popup-overlay {
+        padding: 0;
+        border-radius: 0;
+    }
 }
 
 @media (max-width: 480px) {
-    .image-stack {
-        height: 70vh;
-        min-height: 240px;
-    }
+ 
 
     .nav-btn {
         width: 34px;
