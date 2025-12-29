@@ -1792,6 +1792,25 @@ padding-bottom: 5rem; */
     transition: all 0.3s ease;
 }
 
+.Section-Elements-Item-Qallery {
+    padding-bottom: 20px;
+        text-decoration: none;
+}
+
+.Section-Elements-Item-Qallery img{
+    border-radius: var(--border-radius);
+}
+ .Section-Elements-Item-Qallery p:nth-child(3) {
+    padding: 0 10px;
+    color: var(--black-color);
+
+}
+ .Section-Elements-Item-Qallery p:nth-child(2) {
+    padding-left: 10px;
+    margin-top: 0px !important;
+    /* display: none; */
+
+}
 
 .News-Group-Section .Section-Elements-Item-News {
     transition: all 0.3s ease;
@@ -1799,6 +1818,7 @@ padding-bottom: 5rem; */
 
 .News-Group-Section {
     display: grid;
+    text-decoration: none;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     padding: 30px;
@@ -3038,4 +3058,378 @@ input.Main-Button {
 .full-width {
     grid-column: 1 / -1;
     margin-top: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 123, 173, 0.25); 
+    backdrop-filter: blur(6px);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--secondary-layout-grid);
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.popup-content {
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90vh;
+    /* width: 100%;
+    height: 100%; */
+    
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+ 
+.image-stack {
+    height: 70vh;
+    min-height: 420px;
+    /* width: 100%;
+    height: 100%; */
+    background: var(--background-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-item {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.popup-item.active {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.popup-video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+ 
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.nav-btn {
+    pointer-events: all;
+    border: 1px solid var(--border-color);
+    background: var(--white-color);
+    color: var(--cyan-color);
+    border-radius: 100px !important;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    text-decoration: none;
+    transition: transform 0.25s ease, background 0.25s ease;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: var(--cyan-color-highlight);
+    transform: scale(1.2);
+}
+
+.nav-btn.hidden {
+    display: none;
+}
+
+/* CLOSE BUTTON */
+.popup-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 11;
+    border: 1px solid var(--border-color);
+    background: var(--white-color);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.popup-expand {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 11;
+    border: 1px solid var(--border-color);
+    background: var(--white-color);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.popup-download {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 11;
+    border: 1px solid var(--border-color);
+    background: var(--white-color);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.popup-close:hover, 
+.popup-download:hover,
+.popup-expand:hover {
+    scale: 1.3;
+    transition: all 0.3s ease;
+}
+
+.popup-download.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+.popup-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-color);
+    color: var(--black-color);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    z-index: 10;
+    font-weight: 600;
+}
+
+ 
+@media (max-width: 768px) {
+    .image-stack {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .popup-close,
+    .popup-download, .popup-expand {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-stack {
+        height: 70vh;
+        min-height: 240px;
+    }
+
+    .nav-btn {
+        width: 34px;
+        height: 34px;
+    }
+    
+    .popup-close,
+    .popup-download, .popup-expand {
+        width: 34px;
+        height: 34px;
+        font-size: 20px;
+    }
+    
+    .popup-download {
+        right: 90px;
+    }
+    
+    .popup-counter {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
