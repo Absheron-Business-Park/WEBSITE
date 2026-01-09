@@ -14,7 +14,7 @@ function adjustZoom() {
   }
 
   if (width >= 1024 && height < 730 && headerGroup) {
-    headerGroup.style.height = "78dvh";
+    headerGroup.style.height = "85dvh";
   } else if (headerGroup) {
     headerGroup.style.height = "";
   }
