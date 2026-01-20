@@ -138,7 +138,7 @@ body {
 
 .Main-Button p {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
 }
@@ -189,7 +189,7 @@ body {
 }
 
 .Item p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--black-color);
     text-transform: uppercase;
@@ -286,7 +286,7 @@ body {
 .Sub-Item p {
     text-transform: capitalize;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     white-space: nowrap;
 }
 
@@ -625,7 +625,7 @@ body {
 
 .Header-Section-Item-Text-Description {
     /* display: none; */
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     text-align: justify;
 
@@ -825,7 +825,7 @@ body {
     position: absolute;
     right: 40px;
     bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
     text-decoration: none;
@@ -1046,7 +1046,7 @@ body {
 }
 
 .Section-Elements-Item p:nth-child(3) {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--black-color);
     opacity: 0.7;
@@ -1072,7 +1072,7 @@ body {
 
 .Section-Elements-Item-News p:nth-child(4),
 .Section-Elements-Item-News p:nth-child(2) {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--black-color);
     opacity: 0.7;
@@ -1263,7 +1263,7 @@ body {
     }
 
     .Section-Elements-Item p:nth-child(3) {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -1603,7 +1603,7 @@ padding-bottom: 5rem; */
 
 
     .Header-Section-Item-Text .Header-Section-Item-Text-Description {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -1925,7 +1925,7 @@ padding-bottom: 5rem; */
 }
 
 .Banner-Item-Section p:nth-child(3) {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--white-color);
     margin: 0;
@@ -2119,7 +2119,7 @@ padding-bottom: 5rem; */
 
 .Footer-Item p {
     color: var(--white-color);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     text-align: justify;
     width: 17rem;
@@ -2142,6 +2142,10 @@ padding-bottom: 5rem; */
     width: fit-content;
 }
 
+.Header-Group .Header-Sections, .Header-Image-Navigation {
+display: none !important;
+}
+
 .Footer-Item-Section {
     display: flex;
     flex-wrap: wrap;
@@ -2161,7 +2165,7 @@ padding-bottom: 5rem; */
 }
 
 .Footer-Item a {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--white-color);
     font-weight: 400;
     transition: all 0.3s ease;
@@ -2751,7 +2755,7 @@ ul li::marker {
 }
 
 .Section-Bar-Item-Third p:nth-child(2) {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--black-color);
     opacity: 0.8;
@@ -2769,7 +2773,7 @@ ul li::marker {
 }
 
 .Section-Bar-Item p:nth-child(2) {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--black-color);
     opacity: 0.8;
@@ -2887,7 +2891,7 @@ ul li::marker {
     position: relative;
     text-decoration: none;
     color: var(--black-color);
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 15px;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -2971,7 +2975,7 @@ ul li::marker {
 @media (max-width: 480px) {
     .horizontal-slider a {
         padding: 8px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -3008,7 +3012,7 @@ ul li::marker {
 }
 
 input.Main-Button {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 40px;
     font-weight: 600;
     text-transform: uppercase;
@@ -3031,7 +3035,7 @@ input.Main-Button {
 }
 
 .form-field label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--black-color);
     margin-bottom: 8px;
@@ -3040,7 +3044,7 @@ input.Main-Button {
 .form-field input,
 .form-field textarea {
     height: 55px;
-    padding: 12px 14px;
+    padding: 12px 16px;
     background-color: var(--white-color);
     border-radius: var(--border-radius);
     /* box-shadow: var(--shadow); */
@@ -3397,7 +3401,7 @@ input.Main-Button {
     border: 1px solid var(--border-color);
     padding: 8px 16px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 16px;
     z-index: 10;
     font-weight: 600;
 }
@@ -3454,7 +3458,7 @@ input.Main-Button {
     }
 
     .popup-counter {
-        font-size: 14px;
+        font-size: 16px;
         padding: 6px 12px;
     }
 }
