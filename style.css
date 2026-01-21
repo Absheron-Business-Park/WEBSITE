@@ -529,7 +529,7 @@ body {
 .Header-Group {
     padding-inline: var(--secondary-layout-grid);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
     height: 68dvh;
@@ -653,6 +653,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-left: -7rem;
+    z-index: 1;
 }
 
 .Header-Socials-Item {
@@ -1231,6 +1233,7 @@ body {
         width: 100%;
         padding: 0 !important;
         margin-bottom: 20px;
+        margin: 0 !important;
 
     }
 
@@ -1325,6 +1328,7 @@ body {
         flex-direction: row;
         width: 100%;
         padding: 0 40px;
+        margin: 0;
     }
 
     .Header-Section-Item-Text .Header-Section-Item-Text-Title {
@@ -1338,6 +1342,7 @@ body {
 
     .Header-Socials-Item {
         scale: 1.1;
+        margin: 0;
     }
 
 
@@ -1799,8 +1804,25 @@ padding-bottom: 5rem; */
 }
 
 .News-Group-Section .Section-Elements-Item-News:hover {
+   
     scale: 1.07;
     transition: all 0.3s ease;
+}
+
+.News-Group-Section .Section-Elements-Item-News  {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.News-Group-Section .Section-Elements-Item-News:hover {
+    display: flex;
+    flex-direction: column;
+    scale: 1.07;
+    transition: all 0.3s ease;
+}
+.News-Button-Group {
+    margin-top: auto;
 }
 
 .Section-Elements-Item-Qallery {
