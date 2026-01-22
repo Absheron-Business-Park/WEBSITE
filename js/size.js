@@ -3,15 +3,15 @@ function adjustZoom() {
   const height = window.innerHeight;
   const headerGroup = document.querySelector(".Header-Group");
 
-  if (width >= 1024 && height <= 710) {
-    document.body.style.zoom = "1";
+  if (width >= 1024 && width <= 1500 && height >= 720 && height <= 1000) {
+    document.body.style.zoom = "0.8";  
+  } 
+  else if (width >= 1024 && width <= 1500 && height >= 700 && height < 720) {
+    document.body.style.zoom = "0.9";
   }
-  else if (width >= 1024 && width <= 1500 && height > 710 && height <= 1000) {
-    document.body.style.zoom = "0.8";
-  }
-  else if (width > 1500 && width <= 1670) {
-    document.body.style.zoom = "0.7";
-  }
+  else if (width >= 1028 && width <= 1670) {
+    document.body.style.zoom = "0.7"; 
+  } 
   else {
     document.body.style.zoom = "1";
   }
