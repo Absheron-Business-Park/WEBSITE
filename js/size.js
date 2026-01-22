@@ -3,7 +3,7 @@ function adjustZoom() {
   const height = window.innerHeight;
   const headerGroup = document.querySelector(".Header-Group");
 
-  if (width >= 1024 && width <= 1500 && height >= 940 && height <= 1000) {
+  if (width >= 1024 && width <= 1500 && height >= 720 && height <= 1000) {
     document.body.style.zoom = "0.8";  
   } 
   else if (width >= 1028 && width <= 1670) {
