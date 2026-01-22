@@ -19,7 +19,7 @@ function adjustZoom() {
     }
   }
   else if (width > 1500 && width <= 1670) {
-    appliedZoom = "0.9";
+    appliedZoom = "0.85";
   }
 
   document.body.style.zoom = appliedZoom;
