@@ -11,7 +11,7 @@ function adjustZoom() {
     if (height >= 720 && height <= 1000) {
       appliedZoom = "0.85";
     } 
-    else if (height >= 650 && height < 720) {
+    else if (height >= 620 && height < 720) {
       appliedZoom = "0.8";
     }
     else {

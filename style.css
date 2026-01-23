@@ -1870,7 +1870,7 @@ padding-bottom: 5rem; */
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     .News-Group-Section {
         grid-template-columns: repeat(2, 1fr);
     }
