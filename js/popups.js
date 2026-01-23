@@ -63,10 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Hover functionality for desktop devices
+
 
 document.addEventListener('DOMContentLoaded', function () {
-    const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    // Hover functionality 
+    const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth > 1024;
+
+    // const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
     if (!isDesktop) return; 
     document.querySelectorAll('.Item').forEach(item => {

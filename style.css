@@ -250,7 +250,7 @@ body {
     max-width: 250px;
     min-width: fit-content;
 
-
+    overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
