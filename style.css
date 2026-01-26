@@ -56,7 +56,7 @@ body {
     left: 0;
     width: 100%;
     border-bottom: 1px solid var(--border-color);
-    z-index: 9;
+    z-index: 22;
 }
 
 .Logo {
@@ -699,6 +699,10 @@ body {
     scale: 1.1;
     transition: all 0.3s ease;
 }
+
+/* .Navgation {
+    display: flex !important;
+} */
 
 .Navigation-Button-Left img,
 .Navigation-Button-Right img {
@@ -1427,7 +1431,7 @@ body {
 }
 
 .Image-Container {
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
     margin-top: 45px;
     object-fit: cover;
@@ -2164,7 +2168,7 @@ padding-bottom: 5rem; */
     width: fit-content;
 }
 
-.Header-Group .Header-Sections, .Header-Image-Navigation {
+.Header-Group .Header-Sections {
 display: none !important;
 }
 
