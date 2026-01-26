@@ -1431,11 +1431,19 @@ body {
 }
 
 .Image-Container {
-    /* height: 500px; */
+    height: 500px;
     width: 100%;
     margin-top: 45px;
     object-fit: cover;
 }
+
+.Panel-Section-Group .Image-Container {
+    height: fit-content !important;
+    width: 100%;
+    margin-top: 45px;
+    object-fit: cover;
+}
+ 
 
 .Image-Container img {
     height: 100%;
