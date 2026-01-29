@@ -368,6 +368,18 @@ body {
 
 
     }
+
+    .Header-Socials { 
+        scale: 0.7;
+    }
+    .Header-Socials .Header-Socials-Item:hover { 
+        scale: 1.5;
+    }
+
+    .Map-Responsive {
+        /* scale: 1.2; */
+        /* width: 1200px; */
+    }
 }
 @media (max-width: 1024px) {
     .Hamburger-Group {
@@ -543,6 +555,10 @@ body {
     min-width: 600px;
     overflow: hidden;
     position: relative;
+}
+
+.Header-Image-Section-Group .Header-Image-Navigation, .Header-Socials-Share {
+    display: none !important;
 }
 
 .Header-Image-Section-Group {
