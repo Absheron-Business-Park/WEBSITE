@@ -2128,6 +2128,7 @@ padding-bottom: 5rem; */
     scale: 1.1;
     transition: all 0.3s ease;
     cursor: pointer;
+    opacity: 1;
 }
 
 .Third-Button:hover p {
@@ -2154,13 +2155,14 @@ padding-bottom: 5rem; */
     transition: all 0.3s ease;
     text-decoration: none;
     margin-top: -1rem;
+    opacity: 0.8;
 
 }
 
 .Third-Button p {
     font-size: 16px;
     font-weight: 600;
-    color: var(--cyan-color);
+    color: var(--cyan-color-text);
     text-decoration: none !important;
     filter: drop-shadow(var(--shadow));
 }
