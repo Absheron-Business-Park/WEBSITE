@@ -4,31 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/style.js"></script>
     <!-- <link rel="stylesheet" href="./style.css"> -->
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Absheron-Business-Park/WEBSITE@main/style.css"> -->
     <link rel="icon" type="image/x-icon" href="/assets/svg/favicon.svg">
-<script>
-
-const corsProxy = 'https://corsproxy.io/?';
-const cssUrl = 'https://raw.githubusercontent.com/Absheron-Business-Park/WEBSITE/refs/heads/main/style.css';
-
-fetch(corsProxy + encodeURIComponent(cssUrl))
-    .then(response => response.text())
-    .then(css => {
-        const style = document.createElement('style');
-        style.textContent = css;
-        document.head.appendChild(style);
-        console.log('CSS loaded from GitHub');
-    })
-    .catch(error => {
-        console.error('Failed to load CSS:', error);
-       
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'style.css';
-        document.head.appendChild(link);
-    });
-</script>
 
     <title>Absheron Business Park</title>
 </head>
@@ -695,6 +674,7 @@ fetch(corsProxy + encodeURIComponent(cssUrl))
 
 </body>
 
+<script src="./js/style.js"></script>
 <script src="./js/size.js"></script>
 <script src="./js/logo.js"></script>
 <script src="./js/slider.js"></script>
