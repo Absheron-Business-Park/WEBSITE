@@ -1685,6 +1685,7 @@ padding-bottom: 5rem; */
 }
 
 .Banner-Group {
+    /* hi */
     display: flex;
     align-items: center;
     margin-top: 40px;
@@ -1693,7 +1694,6 @@ padding-bottom: 5rem; */
     height: fit-content;
     position: relative;
     padding: 150px 0 120px 0;
-    /* background-image: url(./assets/images/header/6.JPG); */
 background-image: url("https://raw.githubusercontent.com/Absheron-Business-Park/WEBSITE/main/assets/images/header/6.JPG");
 
 
