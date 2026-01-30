@@ -34,7 +34,21 @@ body {
     width: 100%;
     height: 100%;
     /* overflow-x: hidden !important; */
+    
+    /* Fun rotating effect */
+    animation: rotateBody 10s linear infinite;
+    transform-origin: center;
 }
+
+@keyframes rotateBody {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 .Area-Style {
     background-color: var(--white-color);
