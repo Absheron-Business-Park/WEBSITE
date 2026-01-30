@@ -1693,7 +1693,9 @@ padding-bottom: 5rem; */
     height: fit-content;
     position: relative;
     padding: 150px 0 120px 0;
-    background-image: url(./assets/images/header/6.JPG);
+    /* background-image: url(./assets/images/header/6.JPG); */
+ background-image: url("https://absheron-business-park.github.io/WEBSITE/assets/images/header/6.JPG");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
