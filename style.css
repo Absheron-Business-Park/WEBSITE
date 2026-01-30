@@ -1728,6 +1728,8 @@ padding-bottom: 5rem; */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border-radius:  var(--border-radius) var(--border-radius)0 0;
+    border: 1px solid var(--cyan-color);
 
     height: 100%;
 }
