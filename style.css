@@ -783,7 +783,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     color: var(--white-color);
-    width: 33rem;
+    width: 35rem;
     margin-top: 10px;
     filter: drop-shadow(var(--shadow));
 }
@@ -1450,7 +1450,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     color: var(--black-color);
-    /* text-transform: uppercase; */
+    text-transform: none !important;
 }
 
 .Social-Item-Text-Group p {
