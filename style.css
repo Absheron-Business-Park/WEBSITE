@@ -432,6 +432,10 @@ body {
 
     }
 
+    .Sidepanel-Map-hover-Text .Info-Head {
+        display: none;
+    }
+
     /* Active state for Sub-Item */
     .Sub-Item.active {
         background-color: var(--cyan-color);
@@ -3601,6 +3605,8 @@ input.Main-Button {
     position: relative;
 }
 
+
+
 .Image-hover-items {
     position: relative;
 
@@ -3645,6 +3651,10 @@ input.Main-Button {
     bottom: 0;
     margin-right: 8rem;
     margin-bottom: 10rem;
+}
+
+.faq-container .Info-Text-Group{
+ gap: 0 !important;
 }
 
 .Sidepanel-Map-hover-img {
