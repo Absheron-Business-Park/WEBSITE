@@ -346,3 +346,84 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     });
 });
+
+// Scroll to top button
+(function() {
+    if (window.innerWidth <= 1024) return; // Only run on desktop
+    
+    const sidepanelMap = document.querySelector('.Sidepanel-Map-hover');
+    if (!sidepanelMap) return;
+    
+    let isScrolling = false;
+    let mouseX = 0;
+    let mouseY = 0;
+    
+    document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+    
+    function smoothScrollToSidepanel() {
+        if (isScrolling) return;
+        
+        isScrolling = true;
+        const targetPosition = sidepanelMap.getBoundingClientRect().top + window.pageYOffset + 40;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+        const duration = 800;  
+        
+        function animateScroll(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            
+            if (timeElapsed < duration) {
+                const progress = timeElapsed / duration;
+                const easeProgress = progress < 0.5 
+                    ? 4 * progress * progress * progress 
+                    : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+                
+                const currentScroll = startPosition + (distance * easeProgress);
+                window.scrollTo(0, currentScroll);
+                
+                if (progress > 0.5) {
+                    const elementUnderMouse = document.elementFromPoint(mouseX, mouseY);
+                    if (elementUnderMouse && elementUnderMouse.classList.contains('Sidepanel-Map-hover-img-item')) {
+                        elementUnderMouse.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
+                    }
+                }
+                
+                requestAnimationFrame(animateScroll);
+            } else {
+                window.scrollTo(0, targetPosition);
+                isScrolling = false;
+            }
+        }
+        
+        requestAnimationFrame(animateScroll);
+    }
+    
+    document.querySelectorAll('.Sidepanel-Map-hover-img-item').forEach(item => {
+        let hoverTimeout;
+        
+        item.addEventListener('mouseenter', function(e) {
+            clearTimeout(hoverTimeout);
+            
+            hoverTimeout = setTimeout(() => {
+                smoothScrollToSidepanel();
+            }, 50);
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            clearTimeout(hoverTimeout);
+        });
+        
+        item.addEventListener('click', function() {
+            sidepanelMap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        
+        item.addEventListener('touchstart', function() {
+            sidepanelMap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, { passive: true });
+    });
+})();

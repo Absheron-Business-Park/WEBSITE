@@ -3603,6 +3603,7 @@ input.Main-Button {
 
 .Image-hover-items {
     position: relative;
+
 }
 
 .Image-hover-items img {
@@ -3610,29 +3611,25 @@ input.Main-Button {
     opacity: 0.5;
 }
 
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) translate(0);
+        -webkit-transform: translateY(-20px) translateX(0);
+        -moz-transform: translateY(-20px) translateX(0);
+        -ms-transform: translateY(-20px) translateX(0);
+        -o-transform: translateY(-20px) translateX(0)
+    }
 
-.Image-hover-items img:nth-child(1) {
-    right: 17.6vw;
-    top: 13.5vw;
-    height: fit-content;
-    width: 16.2vw;
+    to {
+        opacity: 1;
+        transform: translateY(0) translate(0);
+        -webkit-transform: translateY(0) translateX(0);
+        -moz-transform: translateY(0) translateX(0);
+        -ms-transform: translateY(0) translateX(0);
+        -o-transform: translateY(0) translateX(0)
+    }
 }
-
-body.zoom-08 .Image-hover-items img:nth-child(1) {
-    right: 22vw;
-    top: 16.8vw;
-    height: fit-content;
-    width: 20vw;
-}
-
-body.zoom-085 .Image-hover-items img:nth-child(1) {
-    right: 20.8vw;
-    top: 15.8vw;
-    height: fit-content;
-    width: 19vw;
-}
-
-
 
 .Sidepanel-Map-hover-img {
     width: 100%;
@@ -3647,50 +3644,18 @@ body.zoom-085 .Image-hover-items img:nth-child(1) {
     right: 0;
     bottom: 0;
     margin-right: 8rem;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
-
-
-
-
-
-
-.Image-hover-items img:nth-child(1) {
-    right: 17.6vw;
-    top: 13.5vw;
-    height: fit-content;
-    width: 16.2vw;
-    z-index: 1;
-    /* opacity: 0; */
-}
-
-body.zoom-08 .Image-hover-items img:nth-child(1) {
-    right: 22vw;
-    top: 16.8vw;
-    height: fit-content;
-    width: 20vw;
-}
-
-body.zoom-085 .Image-hover-items img:nth-child(1) {
-    right: 20.8vw;
-    top: 15.8vw;
-    height: fit-content;
-    width: 19vw;
-}
-
-
-
- 
 .Sidepanel-Map-hover-img {
     display: none;
 }
- 
+
 #map_default {
     display: flex;
 }
 
- 
+
 .Sidepanel-Map-hover-text-group .faq-item {
     display: none;
 }
@@ -3707,10 +3672,130 @@ body.zoom-085 .Image-hover-items img:nth-child(1) {
 
 
 
+.Image-hover-items img:nth-child(1) {
+    right: 17.6vw;
+    top: 13.5vw;
+    height: fit-content;
+    width: 16.2vw;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(1) {
+    right: 22vw;
+    top: 16.8vw;
+    height: fit-content;
+    width: 20vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(1) {
+    right: 20.8vw;
+    top: 15.8vw;
+    height: fit-content;
+    width: 19vw;
+}
+
+.Image-hover-items img:nth-child(2) {
+    right: 14.6vw;
+    top: 13vw;
+    height: fit-content;
+    width: 4.2vw;
+    z-index: 1;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(2) {
+    right: 18.2vw;
+    top: 16.3vw;
+    height: fit-content;
+    width: 4.9vw;
+    z-index: 1;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(2) {
+    right: 17vw;
+    top: 15.3vw;
+    height: fit-content;
+    width: 4.7vw;
+    z-index: 1;
+}
 
 
+.Image-hover-items img:nth-child(3) {
+    right: 2.6vw;
+    top: 10vw;
+    height: fit-content;
+    width: 14.5vw;
+    z-index: 0;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(3) {
+    right: 3vw;
+    top: 12.5vw;
+    height: fit-content;
+    width: 18.2vw;
+
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(3) {
+    right: 3vw;
+    top: 12vw;
+    height: fit-content;
+    width: 16.8vw;
+
+}
 
 
+.Image-hover-items img:nth-child(4) {
+    right: 69.8vw;
+    top: 15.5vw;
+    height: fit-content;
+    width: 26.5vw;
+    z-index: 0;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(4) {
+    right: 87.5vw;
+    top: 19.5vw;
+    height: fit-content;
+    width: 33vw;
+    z-index: 0;
+
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(4) {
+    right: 82.5vw;
+    top: 18.3vw;
+    height: fit-content;
+    width: 31vw;
+    z-index: 0;
+
+}
 
 
+.Image-hover-items img:nth-child(5) {
+    right: 47vw;
+    top: 11vw;
+    height: fit-content;
+    width: 25vw;
+    z-index: 0;
+    opacity: 0;
+}
 
+body.zoom-08 .Image-hover-items img:nth-child(5) {
+    right: 58.5vw;
+    top: 13.5vw;
+    height: fit-content;
+    width: 31.5vw;
+    z-index: 0;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(5) {
+    right: 55vw;
+    top: 12.9vw;
+    height: fit-content;
+    width: 29.5vw;
+    z-index: 0;
+
+}
