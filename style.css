@@ -3850,3 +3850,55 @@ body.zoom-085 .Image-hover-items img:nth-child(7) {
     width: 31vw;
     z-index: 0;
 }
+
+
+.Image-hover-items img:nth-child(8) {
+    right: 56.5vw;
+    top: 28.2vw;
+    height: fit-content;
+    width: 37.6vw;
+    z-index: 0;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(8) {
+       right: 70.5vw;
+    top: 35.2vw;
+    height: fit-content;
+    width: 47vw;
+    z-index: 0;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(8) {
+       right: 66.5vw;
+    top: 33.2vw;
+    height: fit-content;
+    width: 44vw;
+    z-index: 0;
+}
+
+
+.Image-hover-items img:nth-child(9) {
+    right: 32vw;
+    top: 19.2vw;
+    height: fit-content;
+    width: 26.2vw;
+    z-index: 0;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(9) {
+    right: 40vw;
+    top: 24vw;
+    height: fit-content;
+    width: 32.8vw;
+    z-index: 0;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(9) {
+    right: 37.5vw;
+    top: 22.5vw;
+    height: fit-content;
+    width: 31vw;
+    z-index: 0;
+}

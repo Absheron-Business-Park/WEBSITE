@@ -427,3 +427,86 @@ document.addEventListener('DOMContentLoaded', function() {
         }, { passive: true });
     });
 })();
+
+
+document.querySelectorAll('.Sidepanel-Map-hover-img-item').forEach(img => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    img.addEventListener('load', () => {
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        ctx.drawImage(img, 0, 0);
+    });
+
+    function isOpaquePixel(event) {
+        const rect = img.getBoundingClientRect();
+        const x = Math.floor((event.clientX - rect.left) * (img.naturalWidth / rect.width));
+        const y = Math.floor((event.clientY - rect.top) * (img.naturalHeight / rect.height));
+
+        if (x < 0 || y < 0 || x >= canvas.width || y >= canvas.height) {
+            return false;
+        }
+
+        const alpha = ctx.getImageData(x, y, 1, 1).data[3];
+        return alpha > 10; // threshold for transparency
+    }
+
+    img.addEventListener('mousemove', e => {
+        if (isOpaquePixel(e)) {
+            img.classList.add('pixel-hover');
+        } else {
+            img.classList.remove('pixel-hover');
+        }
+    });
+
+    img.addEventListener('mouseleave', () => {
+        img.classList.remove('pixel-hover');
+    });
+});
+
+document.querySelectorAll('.Sidepanel-Map-hover-img-item').forEach(img => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    const originalZ = getComputedStyle(img).zIndex || 'auto';
+
+    function drawImageToCanvas() {
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        ctx.drawImage(img, 0, 0);
+    }
+
+    if (img.complete) {
+        drawImageToCanvas();
+    } else {
+        img.addEventListener('load', drawImageToCanvas);
+    }
+
+    function isOpaquePixel(event) {
+        const rect = img.getBoundingClientRect();
+        const x = Math.floor((event.clientX - rect.left) * (img.naturalWidth / rect.width));
+        const y = Math.floor((event.clientY - rect.top) * (img.naturalHeight / rect.height));
+
+        if (x < 0 || y < 0 || x >= canvas.width || y >= canvas.height) {
+            return false;
+        }
+
+        return ctx.getImageData(x, y, 1, 1).data[3] > 10;
+    }
+
+    img.addEventListener('mousemove', e => {
+        if (isOpaquePixel(e)) {
+            img.classList.add('pixel-hover');
+            img.style.zIndex = '2';
+        } else {
+            img.classList.remove('pixel-hover');
+            img.style.zIndex = originalZ;
+        }
+    });
+
+    img.addEventListener('mouseleave', () => {
+        img.classList.remove('pixel-hover');
+        img.style.zIndex = originalZ;
+    });
+});
