@@ -3797,5 +3797,56 @@ body.zoom-085 .Image-hover-items img:nth-child(5) {
     height: fit-content;
     width: 29.5vw;
     z-index: 0;
+}
 
+
+.Image-hover-items img:nth-child(6) {
+    right: 63.5vw;
+    top: 21vw;
+    height: fit-content;
+    width: 32vw;
+    z-index: 0;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(6) {
+    right: 79vw;
+    top: 26.3vw;
+    height: fit-content;
+    width: 40vw;
+    z-index: 0;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(6) {
+    right: 74.5vw;
+    top: 24.8vw;
+    height: fit-content;
+    width: 37.5vw;
+    z-index: 0;
+}
+
+
+.Image-hover-items img:nth-child(7) {
+    right: 40vw;
+    top: 14vw;
+    height: fit-content;
+    width: 26.2vw;
+    z-index: 0;
+    opacity: 0;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(7) {
+    right: 50vw;
+    top: 17.5vw;
+    height: fit-content;
+    width: 32.8vw;
+    z-index: 0;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(7) {
+    right: 47vw;
+    top: 16.5vw;
+    height: fit-content;
+    width: 31vw;
+    z-index: 0;
 }
