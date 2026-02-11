@@ -679,6 +679,7 @@ body {
     justify-content: space-between;
     margin-left: -7rem;
     z-index: 1;
+    display: none;
 }
 
 .Header-Socials-Item {
@@ -3911,4 +3912,18 @@ body.zoom-085 .Image-hover-items img:nth-child(9) {
     height: fit-content;
     width: 31vw;
     z-index: 0;
+}
+
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
 }
