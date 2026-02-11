@@ -433,7 +433,7 @@ body {
     }
 
     .Sidepanel-Map-hover-Text .Info-Head {
-        display: none;
+        display: none !important;
     }
 
     /* Active state for Sub-Item */
@@ -477,6 +477,17 @@ body {
         justify-content: flex-start;
         width: 100%;
     }
+
+.Sidepanel-Map-hover {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 90px;
+    position: relative;
+
+        margin-top: 0 !important;
+
+    }
+
 
     .Item {
         width: 100%;
@@ -3601,8 +3612,9 @@ input.Main-Button {
 .Sidepanel-Map-hover {
     width: 100%;
     height: fit-content;
-    margin-top: -90px;
+
     margin-bottom: 90px;
+    margin-top: -90px;
     position: relative;
 }
 
@@ -3654,8 +3666,8 @@ input.Main-Button {
     margin-bottom: 10rem;
 }
 
-.faq-container .Info-Text-Group{
- gap: 0 !important;
+.faq-container .Info-Text-Group {
+    gap: 0 !important;
 }
 
 .Sidepanel-Map-hover-img {
@@ -3873,7 +3885,7 @@ body.zoom-085 .Image-hover-items img:nth-child(7) {
 }
 
 body.zoom-08 .Image-hover-items img:nth-child(8) {
-       right: 70.5vw;
+    right: 70.5vw;
     top: 35.2vw;
     height: fit-content;
     width: 47vw;
@@ -3881,7 +3893,7 @@ body.zoom-08 .Image-hover-items img:nth-child(8) {
 }
 
 body.zoom-085 .Image-hover-items img:nth-child(8) {
-       right: 66.5vw;
+    right: 66.5vw;
     top: 33.2vw;
     height: fit-content;
     width: 44vw;
@@ -3915,15 +3927,23 @@ body.zoom-085 .Image-hover-items img:nth-child(9) {
 }
 
 
-.bounce {
-  animation: bounce 2s ease infinite;
+
+.Sidepanel-Map-hover-text-group .faq-item:hover {
+    animation: fade-out-down 2s ease forwards !important;
 }
-@keyframes bounce {
-    70% { transform:translateY(0%); }
-    80% { transform:translateY(-15%); }
-    90% { transform:translateY(0%); }
-    95% { transform:translateY(-7%); }
-    97% { transform:translateY(0%); }
-    99% { transform:translateY(-3%); }
-    100% { transform:translateY(0); }
+
+.fade-out-down {
+    animation: fade-out-down 1s ease forwards;
+}
+
+@keyframes fade-out-down {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
 }
