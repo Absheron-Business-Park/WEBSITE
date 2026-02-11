@@ -488,6 +488,13 @@ body {
 
     }
 
+    
+.Image-hover-items img {
+    position: absolute;
+    display: none !important;
+}
+
+
 
     .Item {
         width: 100%;
@@ -3627,7 +3634,7 @@ input.Main-Button {
 
 .Image-hover-items img {
     position: absolute;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 @keyframes fade-in-down {
