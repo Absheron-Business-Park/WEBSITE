@@ -3700,7 +3700,7 @@ input.Main-Button {
 
 
 
-
+/* 
 
 .Image-hover-items img:nth-child(1) {
     right: 17.6vw;
@@ -3931,7 +3931,7 @@ body.zoom-085 .Image-hover-items img:nth-child(9) {
     height: fit-content;
     width: 31vw;
     z-index: 0;
-}
+} */
 
 
 
@@ -3953,4 +3953,239 @@ body.zoom-085 .Image-hover-items img:nth-child(9) {
         opacity: 1;
         transform: translateY(20px);
     }
+}
+
+
+
+
+
+
+
+.Image-hover-items canvas {
+opacity: 0 !important;
+}
+
+
+
+/* Target both img and canvas with same positioning */
+.Image-hover-items img:nth-child(1),
+.Image-hover-items canvas:nth-child(1) {
+    right: 17.6vw;
+    top: 13.5vw;
+    height: fit-content;
+    width: 16.2vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(1),
+body.zoom-08 .Image-hover-items canvas:nth-child(1) {
+    right: 22vw;
+    top: 16.8vw;
+    height: fit-content;
+    width: 20vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(1),
+body.zoom-085 .Image-hover-items canvas:nth-child(1) {
+    right: 20.8vw;
+    top: 15.8vw;
+    height: fit-content;
+    width: 19vw;
+}
+
+.Image-hover-items img:nth-child(2),
+.Image-hover-items canvas:nth-child(2) {
+    right: 14.6vw;
+    top: 13vw;
+    height: fit-content;
+    width: 4.2vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(2),
+body.zoom-08 .Image-hover-items canvas:nth-child(2) {
+    right: 18.2vw;
+    top: 16.3vw;
+    height: fit-content;
+    width: 4.9vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(2),
+body.zoom-085 .Image-hover-items canvas:nth-child(2) {
+    right: 17vw;
+    top: 15.3vw;
+    height: fit-content;
+    width: 4.7vw;
+}
+
+.Image-hover-items img:nth-child(3),
+.Image-hover-items canvas:nth-child(3) {
+    right: 2.6vw;
+    top: 10vw;
+    height: fit-content;
+    width: 14.5vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(3),
+body.zoom-08 .Image-hover-items canvas:nth-child(3) {
+    right: 3vw;
+    top: 12.5vw;
+    height: fit-content;
+    width: 18.2vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(3),
+body.zoom-085 .Image-hover-items canvas:nth-child(3) {
+    right: 3vw;
+    top: 12vw;
+    height: fit-content;
+    width: 16.8vw;
+}
+
+.Image-hover-items img:nth-child(4),
+.Image-hover-items canvas:nth-child(4) {
+    right: 69.8vw;
+    top: 15.5vw;
+    height: fit-content;
+    width: 26.5vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(4),
+body.zoom-08 .Image-hover-items canvas:nth-child(4) {
+    right: 87.5vw;
+    top: 19.5vw;
+    height: fit-content;
+    width: 33vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(4),
+body.zoom-085 .Image-hover-items canvas:nth-child(4) {
+    right: 82.5vw;
+    top: 18.3vw;
+    height: fit-content;
+    width: 31vw;
+}
+
+.Image-hover-items img:nth-child(5),
+.Image-hover-items canvas:nth-child(5) {
+    right: 47vw;
+    top: 11vw;
+    height: fit-content;
+    width: 25vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(5),
+body.zoom-08 .Image-hover-items canvas:nth-child(5) {
+    right: 58.5vw;
+    top: 13.5vw;
+    height: fit-content;
+    width: 31.5vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(5),
+body.zoom-085 .Image-hover-items canvas:nth-child(5) {
+    right: 55vw;
+    top: 12.9vw;
+    height: fit-content;
+    width: 29.5vw;
+}
+
+.Image-hover-items img:nth-child(6),
+.Image-hover-items canvas:nth-child(6) {
+    right: 63.5vw;
+    top: 21vw;
+    height: fit-content;
+    width: 32vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(6),
+body.zoom-08 .Image-hover-items canvas:nth-child(6) {
+    right: 79vw;
+    top: 26.3vw;
+    height: fit-content;
+    width: 40vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(6),
+body.zoom-085 .Image-hover-items canvas:nth-child(6) {
+    right: 74.5vw;
+    top: 24.8vw;
+    height: fit-content;
+    width: 37.5vw;
+}
+
+.Image-hover-items img:nth-child(7),
+.Image-hover-items canvas:nth-child(7) {
+    right: 40vw;
+    top: 14vw;
+    height: fit-content;
+    width: 26.2vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(7),
+body.zoom-08 .Image-hover-items canvas:nth-child(7) {
+    right: 50vw;
+    top: 17.5vw;
+    height: fit-content;
+    width: 32.8vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(7),
+body.zoom-085 .Image-hover-items canvas:nth-child(7) {
+    right: 47vw;
+    top: 16.5vw;
+    height: fit-content;
+    width: 31vw;
+}
+
+.Image-hover-items img:nth-child(8),
+.Image-hover-items canvas:nth-child(8) {
+    right: 56.5vw;
+    top: 28.2vw;
+    height: fit-content;
+    width: 37.6vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(8),
+body.zoom-08 .Image-hover-items canvas:nth-child(8) {
+    right: 70.5vw;
+    top: 35.2vw;
+    height: fit-content;
+    width: 47vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(8),
+body.zoom-085 .Image-hover-items canvas:nth-child(8) {
+    right: 66.5vw;
+    top: 33.2vw;
+    height: fit-content;
+    width: 44vw;
+}
+
+.Image-hover-items img:nth-child(9),
+.Image-hover-items canvas:nth-child(9) {
+    right: 32vw;
+    top: 19.2vw;
+    height: fit-content;
+    width: 26.2vw;
+}
+
+body.zoom-08 .Image-hover-items img:nth-child(9),
+body.zoom-08 .Image-hover-items canvas:nth-child(9) {
+    right: 40vw;
+    top: 24vw;
+    height: fit-content;
+    width: 32.8vw;
+}
+
+body.zoom-085 .Image-hover-items img:nth-child(9),
+body.zoom-085 .Image-hover-items canvas:nth-child(9) {
+    right: 37.5vw;
+    top: 22.5vw;
+    height: fit-content;
+    width: 31vw;
+}
+
+.Image-hover-items canvas {
+    pointer-events: auto;
+    position: absolute;
+    object-fit: contain;
 }
