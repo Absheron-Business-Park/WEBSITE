@@ -4189,3 +4189,10 @@ body.zoom-085 .Image-hover-items canvas:nth-child(9) {
     position: absolute;
     object-fit: contain;
 }
+
+
+@media (min-width: 1024px) {
+.Sidepanel-Map-hover {
+    scale: 0.91;
+}
+}
