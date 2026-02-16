@@ -503,7 +503,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     
-    // Initial setup
     function initialize() {
         if (window.innerWidth > 1024) {
             adjustFaqForDesktop();
