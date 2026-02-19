@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const hoverCanvases = document.querySelectorAll('.canvas-hover-item');
-    
-    // Define the two default images
+ 
     const fullImage = document.getElementById('map_full');
     const emptyImage = document.getElementById('map_empty');
     
@@ -218,19 +217,17 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // FIXED: Get the correct image ID based on screen size
     function getImageId(target) {
         return window.innerWidth > 1024 ? `map_${target}_desktop` : `map_${target}_tablet`;
     }
     
-    // FIXED: Show target with responsive images
+ 
     function showTarget(target, isClick = false) {
-        // Hide all images first
+ 
         document.querySelectorAll('.Sidepanel-Map-hover-img').forEach(img => {
             img.style.display = 'none';
         });
-        
-        // Get the correct image ID based on screen size
+     
         const imageId = getImageId(target);
         const targetMap = document.getElementById(imageId);
         
@@ -278,31 +275,27 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
-    
-    // FIXED: Reset to default with responsive images
+   
     function resetToDefault() {
-        // Hide all map images
+     
         document.querySelectorAll('.Sidepanel-Map-hover-img').forEach(img => {
             img.style.display = 'none';
         });
         
         if (window.innerWidth > 1024) {
-            // Show empty.png when unhovering on desktop
+        
             if (emptyImage) {
                 emptyImage.style.display = 'flex';
             }
             
-            // Hide all FAQ items
             mapFaqItems.forEach(faq => {
                 faq.style.display = 'none';
             });
         } else {
-            // On mobile, show full.png when unhovering
             if (fullImage) {
                 fullImage.style.display = 'flex';
             }
             
-            // Reset FAQ items
             mapFaqItems.forEach(faq => {
                 faq.classList.remove('active');
                 const answer = faq.querySelector('.faq-answer');
@@ -501,9 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initial setup
     function initialize() {
-        // Hide all images first
         document.querySelectorAll('.Sidepanel-Map-hover-img').forEach(img => {
             img.style.display = 'none';
         });
@@ -517,7 +508,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.addEventListener('mousemove', handleGlobalMousemove);
             container.addEventListener('mouseleave', handleMouseLeave);
             
-            // Desktop: show empty.png
             if (emptyImage) emptyImage.style.display = 'flex';
             
         } else {
@@ -531,7 +521,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (chevron) chevron.style.transform = 'rotate(0deg)';
             });
             
-            // Mobile: show full.png
             if (fullImage) fullImage.style.display = 'flex';
             
             document.removeEventListener('mousemove', handleGlobalMousemove);
