@@ -2531,6 +2531,11 @@ padding-bottom: 5rem; */
 }
 
 
+@media (min-width: 1024px) {
+.Sidepanel-Map-hover-text-group .faq-item .faq-answer .Info-Headline {
+    font-size: 20px;
+}
+}
 @media (max-width: 768px) {
     .Panel-Section-Group {
         display: flex;
