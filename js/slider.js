@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const slider = document.querySelector(".Section-Slider");
     const allElements = Array.from(slider.children);
     
-    // Filter only the slider items (exclude navigation)
     const itemContainers = allElements.filter(el => el.classList.contains("Section-Elements"));
     
     const btnPrev = slider.querySelector(".Section-Elements-Navigation img[src*='left']");
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderSlider() {
-        // Only move the actual slider items, keep navigation buttons in place
         itemContainers.forEach(item => slider.insertBefore(item, btnNext.parentElement));
         
         itemContainers.forEach((item, index) => {
