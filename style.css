@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@font-face {
+    font-family: "Apple_SF_Emoji";
+    src: url('./assets/font/AppleColorEmoji.ttf') format('truetype');
+}
 
 :root {
     --cyan-color: #057BAD;
@@ -3198,6 +3203,7 @@ input.Main-Button {
     border-radius: var(--border-radius);
     /* box-shadow: var(--shadow); */
     border: 1px solid var(--border-color);
+    width: 100%;
 }
 
 .form-field input:focus,
@@ -3229,24 +3235,143 @@ input.Main-Button {
 
 
 
+.form-field-Group {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  /* gap: 6px; */
+  position: relative;
+}
+
+.phone-flag {
+  font-size: 1.1rem;
+    /* font-family: "Noto Color Emoji", sans-serif; */
+    font-family: "Apple_SF_Emoji", sans-serif;
+    position: absolute;
+    right: 1.1rem;
+}
 
 
 
 
 
+select[name="country_code"] {
+    width: 200px;
+    height: 55px;  /* Your specified height */
+    padding: 12px 16px;  /* Your specified padding */
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    font-size: 15px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    transition: all 0.2s ease;
+    line-height: 1.2;
+    box-sizing: border-box;
 
+}
 
+select[name="country_code"]:hover {
+    border-color: #999;
+}
 
+select[name="country_code"]:focus {
+    outline: none;
+    border-color: var(--cyan-color);
+    box-shadow: var(--shadow);
+}
 
+/* Style for the options */
+select[name="country_code"] option {
+    padding: 12px 16px;  /* Matching padding */
+    font-size: 15px;
+    background-color: var(--white-color);
+    color: #333;
+    min-height: 55px;  /* Matching height for options */
+        font-family: "Noto Color Emoji", sans-serif;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+}
 
+/* Hover effect for options (works in some browsers) */
+select[name="country_code"] option:hover {
+    background-color: #f0f0f0;
+}
 
+/* Selected option style */
+select[name="country_code"] option:checked {
+    background-color: var(--cyan-color-highlight);
+    outline: 1px solid var(--cyan-color);
+    color: rgb(0, 0, 0);
+}
 
+/* Disabled state */
+select[name="country_code"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+}
 
+/* For Firefox, to remove inner focus border */
+select[name="country_code"]:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
 
+/* Custom scrollbar for the dropdown */
+select[name="country_code"]::-webkit-scrollbar {
+    width: 8px;
+}
 
+select[name="country_code"]::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
 
+select[name="country_code"]::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
 
+select[name="country_code"]::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
+/* Responsive design */
+@media (max-width: 768px) {
+    select[name="country_code"] {
+        width: 100px;
+        height: 55px;  /* Keeping same height on mobile */
+        padding: 12px 12px;
+        background-position: right 12px center;
+    }
+}
+
+/* Dark mode support using your CSS variables */
+@media (prefers-color-scheme: dark) {
+    select[name="country_code"] {
+        background-color: var(--white-color);  /* Keeping your variable */
+        border-color: var(--border-color);      /* Keeping your variable */
+    }
+    
+    select[name="country_code"] option {
+        background-color: var(--white-color);
+    }
+}
 
 
 
