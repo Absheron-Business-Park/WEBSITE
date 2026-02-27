@@ -10,7 +10,7 @@
 </head>
 
 <body>
-   <div class="Navbar-Group">
+    <div class="Navbar-Group">
         <a href="/" class="Logo">
             <div class="Logo-Group">
                 <img src="./assets/svg/Big_Gear.svg" class="Big-Gear">
@@ -170,7 +170,11 @@
 
                             <div class="form-field">
                                 <label>Əlaqə nömrəsi *</label>
-                                <input type="tel" placeholder="Əlaqə nömrəsini daxil edin" required>
+
+                                <div class="phone-wrapper">
+                                    <input type="tel" id="phone" placeholder="Əlaqə nömrəsi" required> <span
+                                        class="phone-flag"></span>
+                                </div>
                             </div>
 
                             <div class="form-field">
@@ -209,7 +213,7 @@
         <div class="Footer-Item-Section">
             <div class="Footer-Item">
                 <img src="./assets/svg/logo-footer-az.svg" alt="" srcset="">
-               
+
                 <div class="Footer-item-social">
                     <a class="Header-Socials-Item Area-Style">
                         <img src="./assets/svg/fb.Bubble.svg">
@@ -314,6 +318,7 @@
 <script src="./js/size.js"></script>
 <script src="./js/logo.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/call.js"></script>
 <script src="./js/popups.js"></script>
 <script src="./js/hamburger.js"></script>
 <script src="./js/news.js"></script>
